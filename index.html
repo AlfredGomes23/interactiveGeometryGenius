@@ -23,7 +23,7 @@
 
                         <p><input class="w-24 text-lg pl-2 bg-gray-200 rounded" type="text" name="" id="tri-base" placeholder="b"><span class="ml-2">cm.</span>
 
-                        <input class="w-24 text-lg pl-2 ml-4 bg-gray-200 rounded" type="text" name="" id="tri-hight" placeholder="h"><span class="ml-2">cm.</span></p>
+                        <input class="w-24 text-lg pl-2 ml-4 bg-gray-200 rounded" type="text" name="" id="tri-height" placeholder="h"><span class="ml-2">cm.</span></p>
 
                         <p class="text-2xl">Area: <Span class="text-5xl" id="tri-area"></Span>cm<sup>2</sup></p>
 
@@ -50,6 +50,67 @@
                         </div>
                     </div>
                 </div>
+                <!-- Parallelogram-card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/parallelogram.png" alt="triangle" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-3xl font-bold">Parallelogram</h2>
+                        <p class="mb-4">Area (A) = b x h</p>
+
+                        <p><input class="w-24 text-lg pl-2 bg-gray-200 rounded" type="text" name="" id="para-base" placeholder="b"><span class="ml-2">cm.</span>
+
+                        <input class="w-24 text-lg pl-2 ml-4 bg-gray-200 rounded" type="text" name="" id="para-height" placeholder="h"><span class="ml-2">cm.</span></p>
+
+                        <p class="text-2xl">Area: <Span class="text-5xl" id="para-area"></Span>cm<sup>2</sup></p>
+
+                        <div class="card-actions mt-5">
+                            <button class="btn btn-primary w-full" onclick="calculateParallelogramArea()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rhombus-card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/rhombus.png" alt="triangle" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-3xl font-bold">Rhombus</h2>
+                        <p class="mb-4">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                
+                        <p><input class="w-24 text-lg pl-2 bg-gray-200 rounded" type="text" name="" id="d1" placeholder="d1"><span
+                                class="ml-2">cm.</span>
+                
+                            <input class="w-24 text-lg pl-2 ml-4 bg-gray-200 rounded" type="text" name="" id="d2"
+                                placeholder="d2"><span class="ml-2">cm.</span>
+                        </p>
+                
+                        <p class="text-2xl">Area: <Span class="text-5xl" id="rhombus-area"></Span>cm<sup>2</sup></p>
+                
+                        <div class="card-actions mt-5">
+                            <button class="btn btn-primary w-full" onclick="calculateRhombusArea()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pentagon-card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/pentagon.png" alt="triangle" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-3xl font-bold">Pentagon</h2>
+                        <p class="mb-4">Area (A) = 0.5 x p x b</p>
+                
+                        <p><input class="w-24 text-lg pl-2 bg-gray-200 rounded" type="text" name="" id="penta-peri" placeholder="p"><span
+                                class="ml-2">cm.</span>
+                
+                            <input class="w-24 text-lg pl-2 ml-4 bg-gray-200 rounded" type="text" name="" id="penta-base"
+                                placeholder="b"><span class="ml-2">cm.</span>
+                        </p>
+                
+                        <p class="text-2xl">Area: <Span class="text-5xl" id="penta-area"></Span>cm<sup>2</sup></p>
+                
+                        <div class="card-actions mt-5">
+                            <button class="btn btn-primary w-full" onclick="calculatePentagonArea()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             <div class="calculations"> <h1 class="text-3xl">Area Calculator</h1></div>
         </div>
