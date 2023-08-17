@@ -12,14 +12,18 @@ function getValueById(id){
     }
     return value;
 }
-function showElementById(id){
-    const element = document.getElementById(id);
-    element.classList.remove('hidden')
-}
+
+
 function calculateTriangleArea(){
     const base = getValueById('tri-base');
     const hight = getValueById('tri-hight');
-    // if(base == 0 || hight == 0) return;
+    if(base == 0 || hight == 0) return;
     document.getElementById('tri-area').innerText = (0.5*base*hight);
-    showElementById('area');
+}
+function calculateRectangleArea(){
+    const width = getValueById('rec-width');
+    const length = getValueById('rec-length');
+    if (width == 0 || length == 0) return;
+    document.getElementById('rec-area').innerText = (width*length);
+
 }
