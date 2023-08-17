@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoMetry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="main-container flex flex-col lg:flex-row">
+            <div class="card-container flex-1 grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-4">
+                <!-- card1 -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images//triangle.png" alt="triangle" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 x b x h</p>
+                        <p><input class="w-24 text-lg pl-2 bg-gray-200 rounded" type="text" name="" id="b" placeholder="b"><span class="ml-2">cm</span>
+                        <input class="w-24 text-lg pl-2 ml-4 bg-gray-200 rounded" type="text" name="" id="h" placeholder="h"><span class="ml-2">cm</span></p>
+                        <p>Area <Span></Span></p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calculations"> <h1 class="text-3xl">Area Calculator</h1></div>
+        </div>
+    </main>
+    <script src="./area-calculator.js"></script>
+</body>
+
+</html>
